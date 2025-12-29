@@ -13,7 +13,7 @@ export class DataService {
   private static _instance: DataService;
 
   private readonly BASE_URL =
-    "https://api.data.netwerkdigitaalerfgoed.nl/queries/hetutrechtsarchief/";
+    "/api.data.netwerkdigitaalerfgoed.nl/queries/hetutrechtsarchief/";
   private readonly POSTFIX = "/run?pageSize=10000";
   private readonly DOCUMENTS_QUERY_URL =
     this.BASE_URL + "wo2-documenten" + this.POSTFIX;
@@ -52,11 +52,18 @@ export class DataService {
     return Promise.resolve(response);
   }
 
+  private _buildPageUrl(queryUrl: string, pageIdx: number): string {
+    return queryUrl.replace(
+      "/run?pageSize=10000",
+      `/run!page=${pageIdx}&pageSize=10000`
+    );
+  }
+
   private _retrieveFromTripleStore(queryUrl, numPages): Promise<any>[] {
     // TODO: Dynamic check (run for loop until no results are returned anymore)
     const promises: Promise<any>[] = [];
     for (let pageIdx = 1; pageIdx <= numPages; pageIdx++) {
-      const paginatedQueryUrl = queryUrl + `&page=${pageIdx}`;
+      const paginatedQueryUrl = this._buildPageUrl(queryUrl, pageIdx);
       const promise: Promise<any> = this._fetch(paginatedQueryUrl);
       // TODO: Concat results to results parameter
       promises.push(promise);

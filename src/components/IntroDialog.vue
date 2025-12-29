@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { store } from "../store";
 
-const props = defineProps(["is-loading"]);
+defineProps<{ isLoading: boolean }>();
 const emits = defineEmits(["close"]);
 
 const showColofon = () => {

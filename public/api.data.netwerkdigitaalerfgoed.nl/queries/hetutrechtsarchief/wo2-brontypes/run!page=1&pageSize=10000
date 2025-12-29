@@ -1,0 +1,32 @@
+[
+{
+  "sourceId": "https://hetutrechtsarchief.nl/id/beeldbank",
+  "label": "Beeldbank",
+  "description": "Afbeeldingen uit de beeldcollectie van Het Utrechts Archief"
+},
+{
+  "sourceId": "https://hetutrechtsarchief.nl/id/binnenlandse-strijdkrachten",
+  "label": "Binnenlandse Strijdkrachten",
+  "description": "Registratie van leden van de afdeling Utrecht van de Binnenlandse Strijdkrachten die sinds 5 juni 1944 officieel het verzet in Nederland vertegenwoordigden."
+},
+{
+  "sourceId": "https://hetutrechtsarchief.nl/id/gevorderd-perceel",
+  "label": "Gevorderd perceel",
+  "description": "Gevorderde percelen of woningen die (deels) in gebruik werden genomen door de bezetter werden vastgelegd door het Inkwartieringsbureau."
+},
+{
+  "sourceId": "https://hetutrechtsarchief.nl/id/inboedellijsten",
+  "label": "Inboedellijsten",
+  "description": "Inboedellijsten zijn lijsten van roerende goederen en huisraad van de bewoner van een pand of woning. Wanneer de bezetter een pand vorderde werd er dikwijls een inboedellijst opgesteld."
+},
+{
+  "sourceId": "https://hetutrechtsarchief.nl/id/inkwartiering",
+  "label": "Inkwartiering",
+  "description": "Inkwartieringsbiljetten vermelden per adres in de stad Utrecht de namen van de Duitse militair, Utrechtse bewoner en periode van inkwartiering."
+},
+{
+  "sourceId": "https://hetutrechtsarchief.nl/id/joodse-inwoners",
+  "label": "Joodse inwoners",
+  "description": "In 1940, 1941 en 1942 werden burgemeesters opgeroepen per gemeente lijsten op te stellen van joodse inwoners."
+}
+]
